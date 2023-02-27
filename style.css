@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,400;0,600;0,800;1,600;1,800&family=Varela+Round&display=swap');
+
+body{
+    background-color: azure;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Shantell Sans', cursive;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+nav ul li {
+    padding: 0 12px;
+}
+.brand img {
+    width: 48px;
+    border-radius: 30px;
+    padding: 0 8px;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container {
+    min-height: 65vh;
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 10px;
+    background-image: url(spotifybg.jpeg);
+}
+
+.bottom {
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    background-image: linear-gradient(90deg , black, rgb(153, 153, 153));
+    color: white;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.icons {
+    margin: 10px 0; 
+    cursor: pointer;
+}
+#progressBar {
+    width: 75vw;
+    cursor: pointer;
+}
+.songItemContainer {
+    margin-top: 50px;
+}
+.songItem {
+    height: 40px;
+    display: flex;
+    background-color: white;
+    color: black;
+    width: 100%;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+
+}
+.songItem img {
+    width: 30px;
+    margin: 0 20px;
+    border-radius: 30px;
+}
+.timeStamp {
+    margin: 0 13px;
+}
+.timeStamp i {
+    cursor: pointer;
+}
+.songInfo {
+    position: absolute;
+    left: 12vw;
+    font-family: 'Varela Round', sans-serif;
+}
+.songInfo img {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
